@@ -1,18 +1,15 @@
 import { Header } from "./Header.js";  
 
 let Nav = {  
-         navs : [  
-        "content"  
-    ],
-    components : {  
-      Header
-    },
+        props: [
+            "navs"
+        ],
+    
     template: 
     `  
         <nav>      
             <ul>
-                <li Nav v-for="nav in navs" :content= "li.content">
-                </li>
+                <li v-for="nav in navs">{{ nav }}</li>
             </ul>
         </nav>
     `

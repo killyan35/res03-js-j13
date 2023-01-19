@@ -1,4 +1,4 @@
-import { Aside } from "./components/aside.js";  
+import { Main } from "./components/Main.js";  
 
 
 let App = {  
@@ -6,11 +6,11 @@ let App = {
          
     },      
     components : {  
-      Aside
+      Main
     },  
     template:
     ` 
-    <Aside/>
+    <Main/>
     
     `  
 };  

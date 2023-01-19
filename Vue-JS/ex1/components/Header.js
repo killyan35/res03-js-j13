@@ -1,31 +1,18 @@
-import { Nav } from "./Nav.js";
+import { Nav } from "./Nav.js";  
+
+
 let Header = {  
-     
-      data () {  
-        return {  
-            articles : [  
-                {  
-                    content : "Accueil"
-                },  
-                {  
-                    content : "A propos"  
-                },  
-                {  
-                    content : "Contact"  
-                }  
-            ]  
+    data() {  
+        return { 
+            navs : ["Accueil", "A propos", "Contact"]
         }  
-    },  
+    },
     components : {  
-      
       Nav
-      
-    }, 
-    template: 
-    `  
-        <header>      
-            <Nav/>
-            
+    },
+    template: `  
+        <header>
+            <Nav :navs="this.navs"/>
         </header>
     `
 };  

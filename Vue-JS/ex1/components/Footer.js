@@ -1,6 +1,8 @@
 let Footer = {  
     data() {  
-       
+       return {
+           
+       }
     },  
     template: 
     `  

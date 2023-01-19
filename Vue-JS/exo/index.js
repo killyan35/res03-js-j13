@@ -1,7 +1,7 @@
 import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
 import { App } from "./app.js";
 window.addEventListener("DOMContentLoaded", function(){
-    
+    // tout le reste de mon script
 createApp(App).mount('#app');
 
 });
@@ -85,164 +85,164 @@ function exercice1()
 }
 
 
-    let users = [  
-    {  
-        id: 0,  
-        isActive: false,  
-        age: 24,    
-        name: "Marsh Obrien" 
-    },  
-    {  
-        id: 1,  
-        isActive: false,  
-        age: 21,    
-        name: "Rios Gibson" 
-    },  
-    {  
-        id: 2,  
-        isActive: false,  
-        age: 29,  
-        name: "Morgan Buchanan"
-    },  
-    {  
-        id: 3,  
-        isActive: true,  
-        age: 25,    
-        name: "Franklin Dyer" 
-    },  
-    {  
-        id: 4,  
-        isActive: false,  
-        age: 30, 
-        name: "Keller Pitts" 
-    },  
-    {  
-        id: 5,  
-        isActive: false,  
-        age: 25,  
-        name: "Davenport Maddox"  
-    },  
-    {  
-        id: 6,  
-        isActive: true,  
-        age: 31,  
-        name: "Judith Graves"
-    },  
-    {  
-        id: 7,  
-        isActive: true,  
-        age: 26,  
-        name: "Hoffman Hess" 
-    },  
-    {  
-        id: 8,  
-        isActive: true,  
-        age: 22,  
-        name: "Sheena Goff"
-    },  
-    {  
-        id: 9,  
-        isActive: false,  
-        age: 39,  
-        name: "Rose Lawrence" 
-    }  
-];
-    let tab1= document.querySelector("tab1");
+//     let users = [  
+//     {  
+//         id: 0,  
+//         isActive: false,  
+//         age: 24,    
+//         name: "Marsh Obrien" 
+//     },  
+//     {  
+//         id: 1,  
+//         isActive: false,  
+//         age: 21,    
+//         name: "Rios Gibson" 
+//     },  
+//     {  
+//         id: 2,  
+//         isActive: false,  
+//         age: 29,  
+//         name: "Morgan Buchanan"
+//     },  
+//     {  
+//         id: 3,  
+//         isActive: true,  
+//         age: 25,    
+//         name: "Franklin Dyer" 
+//     },  
+//     {  
+//         id: 4,  
+//         isActive: false,  
+//         age: 30, 
+//         name: "Keller Pitts" 
+//     },  
+//     {  
+//         id: 5,  
+//         isActive: false,  
+//         age: 25,  
+//         name: "Davenport Maddox"  
+//     },  
+//     {  
+//         id: 6,  
+//         isActive: true,  
+//         age: 31,  
+//         name: "Judith Graves"
+//     },  
+//     {  
+//         id: 7,  
+//         isActive: true,  
+//         age: 26,  
+//         name: "Hoffman Hess" 
+//     },  
+//     {  
+//         id: 8,  
+//         isActive: true,  
+//         age: 22,  
+//         name: "Sheena Goff"
+//     },  
+//     {  
+//         id: 9,  
+//         isActive: false,  
+//         age: 39,  
+//         name: "Rose Lawrence" 
+//     }  
+// ];
+    // let tab1= document.querySelector("tab1");
     
     
-            for(let i = 0; i < users.length; i++)
-            {
-                if (users[i].isActive=== false)
-                {
-                   let span= document.createElement("span");
-                   span.classList.add("bi-person-fill-down");
-                   let td = document.createElement("td");
+    //         for(let i = 0; i < users.length; i++)
+    //         {
+    //             if (users[i].isActive=== false)
+    //             {
+    //               let span= document.createElement("span");
+    //               span.classList.add("bi-person-fill-down");
+    //               let td = document.createElement("td");
                    
-                    let td2 = document.createElement("td");
-                    let td3 = document.createElement("td");
-                    let td4 = document.createElement("td");
-                    let tr = document.createElement("tr");
-                    let txt = document.createTextNode(users[i].id);
-                    let txt2 = document.createTextNode(users[i].name);
-                    let txt3 = document.createTextNode(users[i].age);
+    //                 let td2 = document.createElement("td");
+    //                 let td3 = document.createElement("td");
+    //                 let td4 = document.createElement("td");
+    //                 let tr = document.createElement("tr");
+    //                 let txt = document.createTextNode(users[i].id);
+    //                 let txt2 = document.createTextNode(users[i].name);
+    //                 let txt3 = document.createTextNode(users[i].age);
                     
-                    let td5 = document.createElement("td");
-                    let a2 = document.createElement("a");
-                    let span2= document.createElement("span");
-                    span2.classList.add("bi-eye");
+    //                 let td5 = document.createElement("td");
+    //                 let a2 = document.createElement("a");
+    //                 let span2= document.createElement("span");
+    //                 span2.classList.add("bi-eye");
                     
-                    let a3 = document.createElement("a");
-                    let span3= document.createElement("span");
-                    span3.classList.add("bi-pen");
-                    let button4= document.createElement("button");
-                    let span4= document.createElement("span");
-                    span4.classList.add("bi-trash3");
+    //                 let a3 = document.createElement("a");
+    //                 let span3= document.createElement("span");
+    //                 span3.classList.add("bi-pen");
+    //                 let button4= document.createElement("button");
+    //                 let span4= document.createElement("span");
+    //                 span4.classList.add("bi-trash3");
                     
-                    let tab1 = document.querySelector(".tab1");
-                    a2.appendChild(span2);
-                    td5.appendChild(a2);
-                    a3.appendChild(span3);
-                    td5.appendChild(a3);
-                    button4.appendChild(span4);
-                    td5.appendChild(button4);
+    //                 let tab1 = document.querySelector(".tab1");
+    //                 a2.appendChild(span2);
+    //                 td5.appendChild(a2);
+    //                 a3.appendChild(span3);
+    //                 td5.appendChild(a3);
+    //                 button4.appendChild(span4);
+    //                 td5.appendChild(button4);
                     
-                    td.appendChild(txt);
-                    td2.appendChild(txt2);
-                    td3.appendChild(txt3);
-                    td4.appendChild(span);
-                    tr.appendChild(td);
-                    tr.appendChild(td2);
-                    tr.appendChild(td3);
-                    tr.appendChild(td4);
-                    tr.appendChild(td5);
-                    tab1.appendChild(tr);
+    //                 td.appendChild(txt);
+    //                 td2.appendChild(txt2);
+    //                 td3.appendChild(txt3);
+    //                 td4.appendChild(span);
+    //                 tr.appendChild(td);
+    //                 tr.appendChild(td2);
+    //                 tr.appendChild(td3);
+    //                 tr.appendChild(td4);
+    //                 tr.appendChild(td5);
+    //                 tab1.appendChild(tr);
                     
-                }
-                else if (users[i].isActive=== true)
-                {
-                   let span= document.createElement("span");
-                   span.classList.add("bi-person-fill-up");
-                   let td = document.createElement("td");
+    //             }
+    //             else if (users[i].isActive=== true)
+    //             {
+    //               let span= document.createElement("span");
+    //               span.classList.add("bi-person-fill-up");
+    //               let td = document.createElement("td");
                    
-                    let td2 = document.createElement("td");
-                    let td3 = document.createElement("td");
-                    let td4 = document.createElement("td");
-                    let tr = document.createElement("tr");
-                    let txt = document.createTextNode(users[i].id);
-                    let txt2 = document.createTextNode(users[i].name);
-                    let txt3 = document.createTextNode(users[i].age);
-                     let td5 = document.createElement("td");
-                    let a2 = document.createElement("a");
-                    let span2= document.createElement("span");
-                    span2.classList.add("bi-eye");
+    //                 let td2 = document.createElement("td");
+    //                 let td3 = document.createElement("td");
+    //                 let td4 = document.createElement("td");
+    //                 let tr = document.createElement("tr");
+    //                 let txt = document.createTextNode(users[i].id);
+    //                 let txt2 = document.createTextNode(users[i].name);
+    //                 let txt3 = document.createTextNode(users[i].age);
+    //                  let td5 = document.createElement("td");
+    //                 let a2 = document.createElement("a");
+    //                 let span2= document.createElement("span");
+    //                 span2.classList.add("bi-eye");
                     
-                    let a3 = document.createElement("a");
-                    let span3= document.createElement("span");
-                    span3.classList.add("bi-pen");
-                    let button4= document.createElement("button");
-                    let span4= document.createElement("span");
-                    span4.classList.add("bi-trash3");
+    //                 let a3 = document.createElement("a");
+    //                 let span3= document.createElement("span");
+    //                 span3.classList.add("bi-pen");
+    //                 let button4= document.createElement("button");
+    //                 let span4= document.createElement("span");
+    //                 span4.classList.add("bi-trash3");
                     
-                    let tab1 = document.querySelector(".tab1");
-                    a2.appendChild(span2);
-                    td5.appendChild(a2);
-                    a3.appendChild(span3);
-                    td5.appendChild(a3);
-                    button4.appendChild(span4);
-                    td5.appendChild(button4);
-                    td.appendChild(txt);
-                    td2.appendChild(txt2);
-                    td3.appendChild(txt3);
-                    td4.appendChild(span);
-                    tr.appendChild(td);
-                    tr.appendChild(td2);
-                    tr.appendChild(td3);
-                    tr.appendChild(td4);
-                    tr.appendChild(td5);
-                    tab1.appendChild(tr);
-                }
+    //                 let tab1 = document.querySelector(".tab1");
+    //                 a2.appendChild(span2);
+    //                 td5.appendChild(a2);
+    //                 a3.appendChild(span3);
+    //                 td5.appendChild(a3);
+    //                 button4.appendChild(span4);
+    //                 td5.appendChild(button4);
+    //                 td.appendChild(txt);
+    //                 td2.appendChild(txt2);
+    //                 td3.appendChild(txt3);
+    //                 td4.appendChild(span);
+    //                 tr.appendChild(td);
+    //                 tr.appendChild(td2);
+    //                 tr.appendChild(td3);
+    //                 tr.appendChild(td4);
+    //                 tr.appendChild(td5);
+    //                 tab1.appendChild(tr);
+    //             }
          
-            }     
+    //         }     
         
     // let nav7 = document.querySelector(".delete-user");
     // let nav8 = document.querySelector(".cancel-btn");
